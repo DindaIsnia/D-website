@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@500&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'M PLUS 2', sans-serif;
+  background-color: #f2f2f2;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #FFE330;
+  border-bottom: 3px solid black;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.topnav a:hover {
+  color: white;
+}
+
+.topnav a.active {
+  background-color: black;
+  color: white;
+  font-weight: normal;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.content {
+  height: 100%;
+  font-family: 'M PLUS 2';
+}
+
+.bg {
+  background-image: url("profile.jpg");
+  height: 1080px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome {
+  padding-top: 5%;
+  padding-left: 10%;
+  color: white;
+  font-weight: lighter;
+  font-size: 50px;
+  position: relative;
+  animation-name: right;
+  animation-duration: 5s;
+}
+
+.welcome p {
+  line-height: 10px;
+}
+
+@keyframes right {
+  from {left: -225px;}
+  to {left:0px;}
+}
+
+#header {
+  padding-top: 15px;
+  background-color: none;
+  color: black;
+  font-size: xx-large;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  animation-name: color;
+  animation-duration: 2s;
+  z-index: -1;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+}
+
+th {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: x-large;
+  font-weight: lighter;
+} 
+
+td {
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 3px;
+  font-size: medium;
+  font-weight: lighter;
+  border: 3px solid black;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  z-index: -1;
+}
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #FFE330;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  border: 3px solid black;
+  
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  cursor: pointer;
+  font-family: 'M PLUS 2', sans-serif;
+}
+
+input[type=submit] {
+  background-color: #FFE330;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'M PLUS 2', sans-serif;
+}
+
+input[type=submit]:hover {
+  font-weight: bold;
+}
+
+.container {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+}
+
+a.font-yellow {
+  color: #0342df;
+  text-decoration: underline dashed #0342df;
+  text-underline-offset: 6px;
+}
+
+.font-black {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: grey;
+}
+
+.btn:hover {
+  color: black;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.twitter {
+  background: #0342df;
+  color: white;
+}
+
+.instagram {
+  background: #FFE330;
+  color: white;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<div class="topnav sticky" style="z-index: 1;">
+  <a class="active" href="index.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="gallery.html">GALLERY</a>
+  <a href="contact.html">CONTACT</a>
+</div>
+
+<div class="bg content" style="padding-left:16px">
+  <div class="welcome">
+    <p>Hi!</p>
+    <p>I'm Dinda</p>
+  </div>
+</div>  
+
+
+
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+</script>
+
+</div>
+
+</body>
+</html>
